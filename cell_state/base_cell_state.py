@@ -6,7 +6,7 @@ class BaseCellState(ABC):
     def __init__(self, cell_value):
         self._cell_value = cell_value
 
-    def get_cell_value(self):
+    def get_cell_value(self) -> bool:
         """Return the read-only value of the cell's value"""
         return self._cell_value
 

@@ -11,7 +11,7 @@ class Engine:
         self._rules = rules
         self._output = output
 
-    def _run_single_turn(self):
+    def _run_single_turn(self) -> None:
         """Run a single turn of the game"""
         for y in range(self._board.get_height()):
             for x in range(self._board.get_width()):
@@ -22,7 +22,7 @@ class Engine:
                         break  # A cell can only be changed once per turn
         self._board.flush_board()
 
-    def run_game(self, max_turn_count=None):
+    def run_game(self, max_turn_count=None) -> None:
         """Start running the game."""
         turn_count = 0
         while not max_turn_count or max_turn_count < turn_count:

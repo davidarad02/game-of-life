@@ -9,7 +9,8 @@ from rules.population_explosion_rule import PopulationExplosionRule
 from rules.repopulation_rule import RepopulationRule
 
 
-def main():
+def main() -> None:
+    """The main function of the program."""
     initial_board = [  # A basic glider pattern: https://en.wikipedia.org/wiki/Glider_(Conway%27s_Life)
         [False, True, False, False, False],
         [False, False, True, False, False],
